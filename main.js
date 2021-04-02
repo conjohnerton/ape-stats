@@ -16,13 +16,13 @@ redis
   .on("connect", () => {
     console.log("Connected to redis...");
     // redis.del(process.env.testAccount);
-    redis.hset(process.env.testAccount, [
-      "username",
-      process.env.testAccount,
-      "stack",
-      "48",
-    ]);
-    redis.hset("totalSilverCount", ["total", 48]);
+    // redis.hset(process.env.testAccount, [
+    //   "username",
+    //   process.env.testAccount,
+    //   "stack",
+    //   "48",
+    // ]);
+    // redis.hset("totalSilverCount", ["total", 48]);
   })
   .on("error", (err) => {
     console.log(err);
